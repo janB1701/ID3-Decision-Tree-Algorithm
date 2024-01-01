@@ -25,7 +25,7 @@ Id3 id3Algorithm = new Id3();
 id3Algorithm.readCSV("path/to/training/data.csv", "path/to/test/data.csv");
 id3Algorithm.id3();
 System.out.println("Decision Tree Constructed.");
-
+```
 ## Output for volleyball_test.csv
 IG(weather) 0.2467498197744391
 IG(temperature) 0.029222565658954647
