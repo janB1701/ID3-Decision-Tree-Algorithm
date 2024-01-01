@@ -25,3 +25,39 @@ Id3 id3Algorithm = new Id3();
 id3Algorithm.readCSV("path/to/training/data.csv", "path/to/test/data.csv");
 id3Algorithm.id3();
 System.out.println("Decision Tree Constructed.");
+
+## Output for volleyball_test.csv
+IG(weather) 0.2467498197744391
+IG(temperature) 0.029222565658954647
+IG(humidity) 0.15183550136234136
+IG(wind) 0.04812703040826927
+weather
+IG(weather) 0.0
+IG(temperature) 0.01997309402197489
+IG(humidity) 0.01997309402197489
+IG(wind) 0.9709505944546686
+wind
+IG(weather) 0.0
+IG(temperature) 0.5709505944546686
+IG(humidity) 0.9709505944546686
+IG(wind) 0.01997309402197489
+humidity
+null 0
+cloudy 1
+rainy 1
+sunny 1
+strong 2
+weak 2
+normal 2
+high 2
+[BRANCHES]:
+1:weather=cloudy yes
+1:weather=rainy 2:wind=strong no
+1:weather=rainy 2:wind=weak yes
+1:weather=sunny 2:humidity=normal yes
+1:weather=sunny 2:humidity=high no
+[PREDICTIONS]: yes yes yes yes no yes yes yes no yes yes no yes no no yes yes yes yes 
+[ACCURACY]: 0.57895
+[CONFUSION_MATRIX]:
+4 7
+1 7
