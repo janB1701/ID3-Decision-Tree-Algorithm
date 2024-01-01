@@ -27,6 +27,7 @@ id3Algorithm.id3();
 System.out.println("Decision Tree Constructed.");
 ```
 ## Output for volleyball_test.csv
+```java
 IG(weather) 0.2467498197744391
 IG(temperature) 0.029222565658954647
 IG(humidity) 0.15183550136234136
